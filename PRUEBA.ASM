@@ -1,0 +1,4 @@
+
+P1: MOV AH,1010B
+P2: MOV BH, AH, 0AH, 0AH
+P1 MO , , 0AH

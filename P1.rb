@@ -80,7 +80,7 @@ class OpenFile
 	end
 	def separate
 		if @archivo != nil then
-			return @archivo.readlines
+			return @archivo.readlines	
 		end
 	end
 end
@@ -98,17 +98,6 @@ if file.archivo != nil then
 		line = line.gsub ", ", ","
 		if line != nil and line[0].ord !=  10 then
 			 temp = Cadena.new line
-			 #if temp.analize_label then
-			 #	@resultado += "Correcto"
-			 #end
-			 #if temp.analize_mnemonic then
-			# 	@resultado += "Correcto"
-			 #nd
-			 #if temp.analize_arguments.to_s["Invalido"] then
-			 #	@resultado += "Incorrecto"
-			 #else
-			 #	@resultado += "Correcto"
-			 #end
 			 @resultado += "Linea: " + i.to_s + " "
 			 @resultado += temp.analize_label.to_s
 			 @resultado += temp.analize_mnemonic.to_s
